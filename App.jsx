@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Alert, Button, Text, View, Image,TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet, Alert, Button, Text, View, Image,TouchableOpacity, TextInput, FlatList } from 'react-native';
 import { useEffect, useState } from 'react';
 
 export default function App() {
@@ -15,6 +15,17 @@ export default function App() {
     setK(k-1)
   }
 
+  // flat list ##################################################
+  const myFlatList=[
+    {key:0,
+      title:"first app"
+    },
+    {key:1,
+      title:"first flat list"
+    }
+  ]
+
+  
   return (
     <View className="flex-1 items-center justify-center bg-black">
 
